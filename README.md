@@ -20,9 +20,11 @@ To add new files (like images, student data sheets, or forms) to this project:
 1.  Go to the main page of [https://github.com/ycShea/MyWeb](https://github.com/ycShea/MyWeb).
 2.  If this is your first time (i.e. the repository is empty), click **creating a new file**.
 <img width="1235" height="158" alt="createNewFile" src="https://github.com/user-attachments/assets/0c9c8aa5-bb4d-4c9b-8e3e-cadcdf93b7de" />
-3.  Click the **Add file** button at the top right-hand corner of the file list.
-4.  Choose **Create new file** to write code, or **Upload files** to drag and drop from your Windows 10 computer.
-5.  **Save your work:** Click the green **Commit changes...** button at the top right-hand corner, then write a short note about what you changed. Click the green **Commit changes** again to confirm.
+3. Click the **Add file** button at the top right-hand corner of the file list.
+
+4. Choose **Create new file** to write code, or **Upload files** to drag and drop from your Windows 10 computer.
+
+5. **Save your work:** Click the green **Commit changes...** button at the top right-hand corner, then write a short note about what you changed. Click the green **Commit changes** again to confirm.
 
 ## 🚀 First-Time Launch Setup
 If the website is not appearing at your link yet, follow these steps to "turn it on":
