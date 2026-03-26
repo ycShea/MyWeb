@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Interactive Page</title>
+    <title>My Project Dashboard</title>
     <style>
         body { font-family: Arial, sans-serif; text-align: center; padding: 20px; background-color: #f4f4f9; }
         .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
@@ -36,16 +36,26 @@
     <hr>
 
     <h3>Embedded Google Spreadsheet</h3>
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSXXXXXXXXX/pubhtml?widget=true&amp;headers=false" width="100%" height="500"></iframe>
+    <iframe id="mySheetFrame" src="" width="100%" height="500"></iframe>
 </div>
 
 <script>
+    /* ============================================================
+       SETTINGS: UPDATE YOUR LINKS HERE
+       ============================================================ */
+    const youtubeID = "kN6W4CPUjGY"; 
+    const spreadsheetURL = "https://docs.google.com/spreadsheets/d/1rRNGLr6HuTycTTZ0Id2eys8q-UBRgqN4oUbj2ZJfN0A/edit?gid=0#gid=0";
+    /* ============================================================ */
+
+    // This makes the spreadsheet load automatically when you open the page
+    window.onload = function() {
+        document.getElementById('mySheetFrame').src = spreadsheetURL;
+    };
+
     function playVideo() {
-        const videoId = "dQw4w9WgXcQ"; // Replace with your YouTube Video ID
         const player = document.getElementById('ytPlayer');
         const container = document.getElementById('videoContainer');
-        
-        player.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        player.src = `https://www.youtube.com/embed/${youtubeID}?autoplay=1`;
         container.classList.remove('hidden');
     }
 
@@ -53,12 +63,11 @@
         const input = document.getElementById('userInput').value;
         const display = document.getElementById('displayText');
         display.innerHTML = input;
-        display.style.fontSize = "50px"; // Large font size
+        display.style.fontSize = "50px"; 
     }
 
     function openSpreadsheet() {
-        // Replace with your actual Google Sheet URL
-        window.open("https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID_HERE/edit", "_blank");
+        window.open(spreadsheetURL, "_blank");
     }
 </script>
 
